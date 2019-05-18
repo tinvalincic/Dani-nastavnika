@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <title>DANI STRUKOVNIH NASTAVNIKA</title>
+        <meta name="description" content="DANI STRUKOVNIH NASTAVNIKA" />
+        <meta name="author" content="Dedal Komunikacije" />
+        <link rel="stylesheet" href="./src/font/OpenSans/OpenSans.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="header-ikona" data-id="nav">
+                <div class="nav_icons">
+                    <div class="bar first_bar"></div>
+                    <div class="bar second_bar"></div>
+                    <div class="bar third_bar"></div>
+                </div>
+            </div>
+            <h1>Dani strukovnih nastavnika</h1>
+        </div>
+        <div id="home">
+            <div class="grid-container">
+                <div
+                    class="grid-item item-7 border nav-link item-nove-obavijesti"
+                    data-id="obavijesti"
+                >
+                    <div class="obavijest-wrap">
+                        <h3 class="nove-obavijesti-naslov">
+                            Najnovije obavijesti
+                            <span class="broj-obavijesti"></span>
+                        </h3>
+                        <h5 class="naslov-obavijesti">
+                            Trenutno nemate nepročitanih obavijesti
+                        </h5>
+                        <p class="datum-obavijesti"></p>
+                        <p class="tekst-obavijesti"></p>
+                    </div>
+                </div>
+                <div
+                    class="grid-item item-7 border nav-link item-obavijesti"
+                    data-id="obavijesti"
+                >
+                    <img
+                        src="./src/img/ikona-pismo.svg"
+                        alt="Obavijesti"
+                        class="img-responsive ikona-obavijesti"
+                    />
+                    <p class="slika-obavijesti-opis">Obavijesti</p>
+                </div>
+                <div class="grid-item border nav-link" data-id="program">
+                    <img
+                        src="./src/img/program.svg"
+                        alt="ikona"
+                        class="menu-icon-pic"
+                    />
+                    <p class="menu-txt">Program</p>
+                </div>
+                <div class="grid-item border nav-link" data-id="raspored">
+                    <img
+                        src="./src/img/raspored.svg"
+                        alt="ikona"
+                        class="menu-icon-pic"
+                    />
+                    <p class="menu-txt">Raspored</p>
+                </div>
+                <div class="grid-item border nav-link" data-id="predavaci">
+                    <img
+                        src="./src/img/predavaci.svg"
+                        alt="ikona"
+                        class="menu-icon-pic"
+                    />
+                    <p class="menu-txt">Predavači</p>
+                </div>
+                <div class="grid-item border nav-link" data-id="mapa">
+                    <img
+                        src="./src/img/mapa.svg"
+                        alt="ikona"
+                        class="menu-icon-pic"
+                    />
+                    <p class="menu-txt">Mapa</p>
+                </div>
+            </div>
+            <div class="logotipi-footer footer-home">
+                <img
+                    src="./src/img/eu-fond-1.png"
+                    alt="eu-fond"
+                    class="img-responsive img-fond"
+                />
+                <img
+                    src="./src/img/asoo-logo.png"
+                    alt="eu-fond"
+                    class="img-responsive img-fond"
+                />
+            </div>
+        </div>
+        <div id="sadrzaj" class="sadrzaj">
+            <div class="sadrzaj-inner"></div>
+        </div>
+        <div class="predavac-sidebar"></div>
+        <div class="nav-overlay"></div>
+        <div class="nav-sidebar">
+            <img
+                src="./src/img/modernizacija-logo.png"
+                alt="Modernizacija sustava stručnog osposobljavanja nastavnika strukovnih predmeta"
+                class="img-responsive logo-nav"
+            />
+            <div class="nav-linkovi">
+                <button class="sidebar-nav-link nav-link" data-id="o_projektu">
+                    <div class="nav-ikona"><i class="fas fa-book"></i></div>
+                    <div class="nav-tekst">O projektu</div>
+                </button>
+                <button class="sidebar-nav-link nav-link" data-id="informacije">
+                    <div class="nav-ikona">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="nav-tekst">O Danima strukovnih nastavnika</div>
+                </button>
+                <button class="sidebar-nav-link nav-link" data-id="eventa">
+                    <div class="nav-ikona">
+                        <img
+                            src="./src/img/eventa.svg"
+                            alt="Eventa Lite"
+                            class="img-responsive nav-ikona-img"
+                        />
+                    </div>
+                    <div class="nav-tekst">Eventa lite</div>
+                </button>
+            </div>
+            <button class="zatvori-nav" id="zatvori-nav">ZATVORI</button>
+        </div>
+        <div class="templejti" style="display: none;">
+            <div id="templejt-informacije">
+                <div class="informacije-wrap">
+                    <div class="logo-informacije">
+                        <img
+                            src="./src/img/asoo-logo.png"
+                            alt="ASOO logo"
+                            class="img-responsive informacije-logo"
+                        />
+                    </div>
+                    <div class="informacije-sekcija">
+                        <p class="informacije-tekst">
+                            Agencija za strukovno obrazovanje i obrazovanje
+                            odraslih,
+                            <strong
+                                >od 22. do 24. listopada 2018. godine u
+                                Šibeniku</strong
+                            >, organizira
+                            <strong>„2. dane strukovnih nastavnika“</strong>.
+                        </p>
+                    </div>
+                    <div class="informacije-sekcija">
+                        <h5 class="informacije-naslov">Sudionici</h5>
+                        <p class="informacije-tekst">
+                            Ovo događanje osmišljeno je i predviđeno za
+                            nastavnike strukovnih predmeta iz ustanova za
+                            strukovno obrazovanje, a koji nisu sudjelovali na 1.
+                            Danima strukovnih nastavnika.
+                        </p>
+                        <p class="informacije-tekst">
+                            Za svaki obrazovni strukovni sektor predviđen je
+                            broj mjesta koji je određen prema broju ustanova za
+                            strukovno obrazovanje koje nude strukovne programe
+                            iz tog sektora. Također, predviđen je i određen broj
+                            mjesta na rezervnoj listi za svaki obrazovni sektor.
+                        </p>
+                        <p class="informacije-tekst">
+                            Prijave za sudjelovanje moguće su dok ima slobodnih
+                            mjesta na glavnoj i rezervnoj listi. Nakon što se
+                            popune slobodna i rezervna mjesta prijave više neće
+                            biti moguće.
+                        </p>
+                    </div>
+                    <div class="informacije-sekcija">
+                        <h5 class="informacije-naslov">
+                            Trošak smještaja i prehrane
+                        </h5>
+                        <p class="informacije-tekst">
+                            Troškovi smještaja i prehrane za sve sudionike bit
+                            će pokriveni iz ESF projekta Agencije "Modernizacija
+                            sustava stručnog usavršavanja nastavnika strukovnih
+                            predmeta".
+                        </p>
+                        <p class="informacije-tekst">
+                            Smještaj će biti organiziran u jednokrevetnim sobama
+                            u dva hotela (****) u sklopu "Amadria park" hotela
+                            (Solaris) u Šibeniku. Raspored sudionika po sobama
+                            vršiti će hotel prilikom prijava sudionika na
+                            recepciji.
+                        </p>
+                    </div>
+                    <div class="informacije-sekcija">
+                        <h5 class="informacije-naslov">Putni troškovi</h5>
+                        <p class="informacije-tekst">
+                            Agencija za strukovno obrazovanje i obrazovanje
+                            odraslih pokriti će troškove organiziranog
+                            autobusnog prijevoza iz 12 gradova za sudionike koji
+                            prilikom prijave odaberu takvu mogućnost:
+                        </p>
+                        <ul class="informacije-lista">
+                            <li>Osijek - Slavonski brod</li>
+                            <li>Bjelovar - Varaždin</li>
+                            <li>Zagreb - Karlovac (2 autobusa)</li>
+                            <li>Pula - Pazin - Rijeka</li>
+                            <li>Zadar</li>
+                            <li>Split</li>
+                            <li>Dubrovnik</li>
+                        </ul>
+                    </div>
+                    <div class="logotipi-footer logotipi-informacije">
+                        <img
+                            src="./src/img/eu-fond-1.png"
+                            alt="eu-fond"
+                            class="img-responsive img-fond"
+                        />
+                        <img
+                            src="./src/img/asoo-logo.png"
+                            alt="eu-fond"
+                            class="img-responsive img-fond"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="templejt-mapa">
+                <div class="mape-append"></div>
+            </div>
+            <div id="templejt-o_projektu">
+                <div class="o-projektu">
+                    <div class="informacije-wrap">
+                        <div class="logo-informacije">
+                            <img
+                                src="./src/img/modernizacija-logo.png"
+                                alt="ASOO logo"
+                                class="img-responsive o-projektu-logo"
+                            />
+                        </div>
+                        <div class="informacije-sekcija">
+                            <p class="informacije-tekst">
+                                Projekt "Modernizacija sustava stručnog
+                                usavršavanja nastavnika strukovnih predmeta"
+                                sufinanciran je iz Europskog socijalnog fonda, a
+                                nositelj je Agencija za strukovno obrazovanje i
+                                obrazovanje odraslih. Vrijednost ovog projekta
+                                iznosi ukupno 11.828.218,80 HRK, od čega se 85%
+                                sufinancira iz Europskog socijalnog fonda, a 15%
+                                iz nacionalnih sredstava. <br />
+                                Projekt se financira u okviru Poziva tijelima za
+                                dostavu prijedloga operacija koje će se
+                                financirati kao izravna dodjela sredstava u
+                                okviru Prioritetne osi 3 „Obrazovanje i
+                                cjeloživotno učenje“, Operativnog programa
+                                „Učinkoviti ljudski potencijali“ 2014.-2020.“,
+                                kojeg je objavilo Ministarstvo rada i
+                                mirovinskog sustava. Projekt traje do prosinca
+                                2019. godine.
+                            </p>
+                        </div>
+                        <div class="informacije-sekcija">
+                            <p class="informacije-tekst">
+                                Projekt će omogućiti značajan pomak i razvoj
+                                inovativnog, otvorenog i fleksibilnog sustava
+                                stručnog usavršavanja strukovnih nastavnika
+                                utemeljenog na istraženim potrebama, relevantnim
+                                sadržajima, modernim metodama izvođenja,
+                                suvremenim IT alatima i rješenjima, sa širokom
+                                mrežom stručnjaka, a strukovnim nastavnicima kao
+                                ciljnoj skupini će se osigurati bolja podrška i
+                                kvalitetnije mogućnosti za jačanje nastavničkih
+                                kompetencija i tako podići kvaliteta poučavanja
+                                i učeničkih postignuća te kapacitet za provedbu
+                                reformi u strukovnom obrazovanju.
+                            </p>
+                        </div>
+                        <div class="informacije-sekcija">
+                            <p class="informacije-tekst">
+                                Ciljna skupina projekta je odgojno-obrazovno
+                                osoblje u strukovnim obrazovnim ustanovama
+                                (2500). Ovaj projekt direktno odgovara na
+                                prioritete i mjere Programa razvoja sustava
+                                strukovnog obrazovanja i osposobljavanja 2016. –
+                                2020. (Prioritet 2, Cilj 2.2, Mjera 2.5.) kao i
+                                Strategije obrazovanja, znanosti i tehnologije
+                                (4. cilj).<br />
+                                Identificirane potrebe ciljne skupine su
+                                neadekvatno inicijalno obrazovanje, nedostatak
+                                znanja u generičkim temama (podučavanje u
+                                sustavu orijentiranom na ishode učenja, radu u
+                                višejezičnoj sredini/ili s učenicima s
+                                teškoćama, osiguravanje kvalitete), nedostatan
+                                odziv nastavnika na ponuđena stručna
+                                usavršavanja te ograničena ponuda kvalitetnih
+                                suvremenih programa osposobljavanja.
+                                Unaprjeđenjem sustava strukovnog obrazovanja
+                                kroz ovaj projekt ciljnoj će se skupini u svrhu
+                                profesionalizacije nastavničke struke, jačanja
+                                kapaciteta nastavnika i podizanja njihovog
+                                društvenog ugleda omogućiti rješavanje navedenih
+                                potreba kroz slijedeće aktivnosti: povećanje
+                                broj nastavnika koji sudjeluju u procesima
+                                stručnog usavršavanja; osiguranje veće
+                                dostupnosti i relevantnost sadržaja i materijala
+                                stručnog usavršavanja što će rezultirati
+                                unapređenjem kvalitete usavršavanja;
+                                usklađivanje nacionalnih prioriteta i provedba
+                                usavršavanja temeljenog na potrebama
+                                nastavnika/škole; definiranje dugoročnih ciljeva
+                                stručnog usavršavanja; osiguranje mehanizama i
+                                mjera za jačanje nastavničkih kompetencija i
+                                motivacije za profesionalni razvoj; izrada
+                                cjelovite strategije stručnog usavršavanja te
+                                unaprjeđenje sustava napredovanja nastavnika.
+                            </p>
+                        </div>
+                        <div class="logotipi-footer logotipi-informacije">
+                            <img
+                                src="./src/img/eu-fond-1.png"
+                                alt="eu-fond"
+                                class="img-responsive img-fond"
+                            />
+                            <img
+                                src="./src/img/asoo-logo.png"
+                                alt="eu-fond"
+                                class="img-responsive img-fond"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="templejt-obavijesti">
+                <div class="obavijesti-append"></div>
+                <div class="logotipi-footer">
+                    <img
+                        src="./src/img/eu-fond-1.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                    <img
+                        src="./src/img/asoo-logo.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                </div>
+            </div>
+            <div id="templejt-predavaci">
+                <div class="predavaci-append"></div>
+                <div class="logotipi-footer">
+                    <img
+                        src="./src/img/eu-fond-1.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                    <img
+                        src="./src/img/asoo-logo.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                </div>
+            </div>
+            <div id="templejt-program">
+                <div class="program-append"></div>
+                <div class="logotipi-footer">
+                    <img
+                        src="./src/img/eu-fond-1.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                    <img
+                        src="./src/img/asoo-logo.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                </div>
+            </div>
+            <div id="templejt-raspored">
+                <div class="raspored-append"></div>
+                <div class="logotipi-footer">
+                    <img
+                        src="./src/img/eu-fond-1.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                    <img
+                        src="./src/img/asoo-logo.png"
+                        alt="eu-fond"
+                        class="img-responsive img-fond"
+                    />
+                </div>
+            </div>
+            <div id="templejt-eventa">
+                <iframe
+                    src="http://eventa-app.net/live/"
+                    style="width:100%; height:100%;"
+                ></iframe>
+            </div>
+        </div>
+        <div class="loading-window" style="display: block;">
+            <img src="./src/img/loading.svg" />
+        </div>
+        <script src="./src/index.js"></script>
+    </body>
+</html>

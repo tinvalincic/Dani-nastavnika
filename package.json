@@ -1,0 +1,32 @@
+{
+    "name": "dani-nastavnika",
+    "version": "1.0.0",
+    "description": "Dani nastavnika",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel index.html",
+        "format": "prettier --write \"js/**/*.{js}\" ",
+        "lint": "eslint \"js/**/*.{js}\" --quiet --fix",
+        "clean": "rmdir /Q /S .cache & rmdir /Q /S dist"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "parcel-bundler": "^1.10.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.4",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^4.2.0",
+        "eslint-plugin-import": "^2.17.2",
+        "parcel-bundler": "^1.12.3",
+        "prettier": "^1.17.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://dedalkomunikacije@bitbucket.org/dedalkomunikacije/dani-nastavnika.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/dedalkomunikacije/dani-nastavnika#readme"
+}
